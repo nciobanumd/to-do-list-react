@@ -1,0 +1,33 @@
+.container {
+    display: none;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgb(32, 32, 32, .7);
+}
+
+.active{
+    display: grid;
+    
+}
+
+.wrapper {
+    position: relative;
+    width: 250px;
+    padding: 32px;
+    border: 1 solid gray;
+    border-radius: 8px;
+    background: white;
+
+}
+
+.iconWrapper {
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 16px;
+}

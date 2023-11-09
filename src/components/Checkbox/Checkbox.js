@@ -1,14 +1,18 @@
 import './style.css'
 
 
-const Checkbox = ({value, toggle}) => {
+const Checkbox = ({checked, toggle, title}) => {
     
     const handleChange =() => {
-        toggle(!value)
+        toggle(title)
 
     }
 
-    return <input className='checkbox' type='checkbox' value={value} onChange={handleChange}/>
+    return <input 
+     className='checkbox' 
+      type='checkbox'
+       checked={checked} 
+        onChange={handleChange}/>
 }
 
 export default Checkbox
